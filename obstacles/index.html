@@ -31,7 +31,7 @@
         <!-- <h1>Register:</h1> -->
         
         <!-- One "tab" for each step in the form: -->
-        <div class="tab"><p>Hello, are you : </p>
+        <div class="tab" id="mainCategory"><p>Hello, are you : </p>
             <p><input type="radio" name="category" value="citizen" oninput="this.className = ''">Citizen</p>
             <p><input type="radio" name="category" value="business" oninput="this.className = ''">Business</p>
 
@@ -39,17 +39,17 @@
             <p><input placeholder="Last name..." oninput="this.className = ''"></p> -->
         </div>
         
-        <div class="tab"><p>What category your problem is ?</p>
+        <div class="tab" id="subCitizen"><p>What category your problem is ?</p>
             <p><input type="radio" name="subCitizen" value="travel" oninput="this.className = ''">Travel</p>
             <p><input type="radio" name="subCitizen" value="workRetirement" oninput="this.className = ''">Work & Retirement</p>
-            <p><input type="radio" name="subCitizen" value="Vehicles" oninput="this.className = ''">Vehicles</p>
-            <p><input type="radio" name="subCitizen" value="Residence" oninput="this.className = ''">Residence formalities</p>
-            <p><input type="radio" name="subCitizen" value="EducationYouth" oninput="this.className = ''">Education & Youth</p>
-            <p><input type="radio" name="subCitizen" value="Health" oninput="this.className = ''">Health</p>
-            <p><input type="radio" name="subCitizen" value="Family" oninput="this.className = ''">Family</p>
-            <p><input type="radio" name="subCitizen" value="Consumers" oninput="this.className = ''">Consumers</p>
+            <p><input type="radio" name="subCitizen" value="vehicles" oninput="this.className = ''">Vehicles</p>
+            <p><input type="radio" name="subCitizen" value="residence" oninput="this.className = ''">Residence formalities</p>
+            <p><input type="radio" name="subCitizen" value="educationYouth" oninput="this.className = ''">Education & Youth</p>
+            <p><input type="radio" name="subCitizen" value="health" oninput="this.className = ''">Health</p>
+            <p><input type="radio" name="subCitizen" value="family" oninput="this.className = ''">Family</p>
+            <p><input type="radio" name="subCitizen" value="consumers" oninput="this.className = ''">Consumers</p>
         </div>
-        <div class="tab"><p>What category your problem is ?</p>
+        <div class="tab" id="subBusiness"><p>What category your problem is ?</p>
             <p><input type="radio" name="subBusiness" value="travel" oninput="this.className = ''">Running a business</p>
             <p><input type="radio" name="subBusiness" value="workRetirement" oninput="this.className = ''">Taxation</p>
             <p><input type="radio" name="subBusiness" value="Vehicles" oninput="this.className = ''">Selling in the EU</p>
@@ -58,16 +58,68 @@
             <p><input type="radio" name="subBusiness" value="Health" oninput="this.className = ''">Finance and funding</p>
             <p><input type="radio" name="subBusiness" value="Family" oninput="this.className = ''">Dealing with customers</p>
         </div>
-        
-        <div class="tab">Birthday:
-            <p><input placeholder="dd" oninput="this.className = ''"></p>
-            <p><input placeholder="mm" oninput="this.className = ''"></p>
-            <p><input placeholder="yyyy" oninput="this.className = ''"></p>
+
+        <div class="tab" id="subCitizenTravel"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenTravel" value="documents" oninput="this.className = ''">Documents you need for travel in Europe</p>
+            <p><input type="radio" name="subCitizenTravel" value="passengerRights" oninput="this.className = ''">Passenger rights</p>
+            <p><input type="radio" name="subCitizenTravel" value="transportDisability" oninput="this.className = ''">Transport and disability</p>
+            <p><input type="radio" name="subCitizenTravel" value="drivingAbroad" oninput="this.className = ''">Driving abroad</p>
+            <p><input type="radio" name="subCitizenTravel" value="toTake" oninput="this.className = ''">What can you take with you?</p>
+            <p><input type="radio" name="subCitizenTravel" value="securityEmergencies" oninput="this.className = ''">Security and emergencies</p>
+            <p><input type="radio" name="subCitizenTravel" value="package" oninput="this.className = ''">Package travel and timeshare</p>
         </div>
-        
-        <div class="tab">Login Info:
-            <p><input placeholder="Username..." oninput="this.className = ''"></p>
-            <p><input placeholder="Password..." oninput="this.className = ''"></p>
+
+        <div class="tab" id="subCitizenWorkRetirement"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="workingAbroad" oninput="this.className = ''">Working abroad</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="findingJobAbroad" oninput="this.className = ''">Finding a job abroad</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="professionalQualif" oninput="this.className = ''">Professional qualifications</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="unemploymentBenefits" oninput="this.className = ''">Unemployment & benefits</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="retiringAbroad" oninput="this.className = ''">Retiring abroad</p>
+            <p><input type="radio" name="subCitizenWorkRetirement" value="taxes" oninput="this.className = ''">Taxes</p>
+        </div>
+
+        <div class="tab" id="subCitizenVehicles"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenVehicles" value="cars" oninput="this.className = ''">Cars</p>
+            <p><input type="radio" name="subCitizenVehicles" value="drivingLicence" oninput="this.className = ''">Driving licence</p>
+            <p><input type="radio" name="subCitizenVehicles" value="insurance" oninput="this.className = ''">Insurance</p>
+            <p><input type="radio" name="subCitizenVehicles" value="registration" oninput="this.className = ''">Registration</p>
+        </div>
+
+        <div class="tab" id="subCitizenResidenceFormalities"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenResidenceFormalities" value="residenceRights" oninput="this.className = ''">Residence rights</p>
+            <p><input type="radio" name="subCitizenResidenceFormalities" value="familyResidenceRights" oninput="this.className = ''">Family residence rights</p>
+            <p><input type="radio" name="subCitizenResidenceFormalities" value="documentsFormalities" oninput="this.className = ''">Documents and formalities</p>
+            <p><input type="radio" name="subCitizenResidenceFormalities" value="electionsAbroad" oninput="this.className = ''">Elections abroad</p>
+        </div>
+
+        <div class="tab" id="subCitizenEducationYouth"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenEducationYouth" value="school" oninput="this.className = ''">School</p>
+            <p><input type="radio" name="subCitizenEducationYouth" value="university" oninput="this.className = ''">University</p>
+            <p><input type="radio" name="subCitizenEducationYouth" value="traineeships" oninput="this.className = ''">Traineeships</p>
+            <p><input type="radio" name="subCitizenEducationYouth" value="researchers" oninput="this.className = ''">Researchers</p>
+            <p><input type="radio" name="subCitizenEducationYouth" value="volunteering" oninput="this.className = ''">volunteering</p>
+        </div>
+
+        <div class="tab" id="subCitizenHealth"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenHealth" value="unplannedHealthcare" oninput="this.className = ''">Unplanned healthcare</p>
+            <p><input type="radio" name="subCitizenHealth" value="plannedMedical" oninput="this.className = ''">Planned medical treatment abroad</p>
+            <p><input type="radio" name="subCitizenHealth" value="prescriptionMedicine" oninput="this.className = ''">Getting prescription medicine abroad</p>
+            <p><input type="radio" name="subCitizenHealth" value="whenLivingAbroad" oninput="this.className = ''">When living abroad</p>
+        </div>
+
+        <div class="tab" id="subCitizenFamily"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenFamily" value="children" oninput="this.className = ''">Children</p>
+            <p><input type="radio" name="subCitizenFamily" value="couples" oninput="this.className = ''">Couples</p>
+            <p><input type="radio" name="subCitizenFamily" value="inheritance" oninput="this.className = ''">Cross-border inheritance</p>
+        </div>
+
+        <div class="tab" id="subCitizenConsumers"><p>What category your problem is ?</p>
+            <p><input type="radio" name="subCitizenConsumers" value="shopping" oninput="this.className = ''">Shopping</p>
+            <p><input type="radio" name="subCitizenConsumers" value="internetTelecoms" oninput="this.className = ''">Internet and telecoms</p>
+            <p><input type="radio" name="subCitizenConsumers" value="financialProductsServices" oninput="this.className = ''">Financial products and services</p>
+            <p><input type="radio" name="subCitizenConsumers" value="unfairTreatment" oninput="this.className = ''">Unfair treatment</p>
+            <p><input type="radio" name="subCitizenConsumers" value="energySupply" oninput="this.className = ''">Energy supply</p>
+            <p><input type="radio" name="subCitizenConsumers" value="consumerDispute" oninput="this.className = ''">Consumer dispute resolution</p>
         </div>
         
         <div style="overflow:auto;">
