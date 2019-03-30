@@ -22,8 +22,12 @@ input.invalid {
 }
 
 /* Hide all steps by default: */
+#mainCategory {
+    display: inline;
+}
 .tab {
     display: none;
+    margin: 80px;
 }
 
 /* Make circles that indicate the steps of the form: */
