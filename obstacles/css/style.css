@@ -18,7 +18,7 @@ p:hover{
     background-color: #ffffff;
     margin: 100px auto;
     padding: 40px;
-    width: 60%;
+    width: 75%;
     min-width: 300px;
     justify-content: center;
 }
@@ -28,7 +28,7 @@ p:hover{
     text-decoration: underline;
     color: #4c4cc5;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 0.6em;
     font-weight: bold;
 }
 
