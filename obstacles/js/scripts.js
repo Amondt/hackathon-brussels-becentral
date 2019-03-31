@@ -1,17 +1,31 @@
 window.onload = () => {
 
-    var currentTab = 'mainCategory'; // Current tab is set to be the first tab (0)
-    // document.querySelector(`#mainCategory`).style.display = 'inline'
+    var currentTab = 'mainCategory'
+    var navs = ['mainSection', 'subSection', 'subSection2']
+    var currentNav = 0
 
     var radios = document.querySelectorAll('input[type="radio"]')
 
+    function navigate(e) {
+        e.target.removeEventListener('click', navigate)
+        console.log('clicked on '+e.target.innerHTML)
+    }
+
     radios.forEach((radio) => {
         radio.addEventListener('click', function (e) {
-            console.log('input clicked', currentTab)
-            document.querySelector(`#${currentTab}`).style.display = 'none'
-            document.querySelector(`#${e.target.value}`).style.display = 'inline'
-            currentTab = e.target.value
-
+            if (currentNav < 2) {
+                console.log('input clicked', currentTab)
+                document.querySelector(`#${currentTab}`).style.display = 'none'
+                document.querySelector(`#${e.target.value}`).style.display = 'inline'
+                document.querySelector('#'+navs[currentNav]).innerHTML = e.target.parentNode.innerText + ' >&nbsp;'
+                document.querySelector('#'+navs[currentNav]).addEventListener('click', navigate)
+                currentNav += 1
+                currentTab = e.target.value
+            } else {
+                document.querySelector(`#${currentTab}`).style.display = 'none'
+                document.querySelector('#message').style.display = 'inline-block'
+                document.querySelector('#'+navs[currentNav]).innerHTML = e.target.parentNode.innerText + ' >&nbsp;'
+            }
         })
     })
 

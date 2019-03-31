@@ -28,7 +28,7 @@
 <body>
     <form id="regForm" action="">
 
-        <!-- <h1>Register:</h1> -->
+        <p><span class="nav" id="mainSection"></span><span class="nav" id="subSection"></span><span class="nav" id="subSection2"></span></p>
         
         <!-- One "tab" for each step in the form: -->
         <div class="tab" id="mainCategory">
@@ -171,14 +171,8 @@
             <p><input type="radio" name="dealingCustomers" value="disputesCustomers" oninput="this.className = ''">Solving disputes with customers</p>
             <p><input type="radio" name="dealingCustomers" value="dataProtection" oninput="this.className = ''">Data protection</p>
         </div>
-        
-        <!-- Circles which indicates the steps of the form: -->
-        <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-        </div>
+
+        <div id="message"><textarea name ="message" placeholder="description"></textarea></div>
             
     </form>
 
