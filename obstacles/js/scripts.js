@@ -62,6 +62,6 @@ window.onload = () => {
         e.preventDefault()
         document.querySelector('#message').style.display = 'none'
         document.querySelector('#msgSend').style.display = 'block'
-        setTimeout(function(){ document.querySelector('#regForm').style.display = 'none' }, 3000);
+
     })
 }
