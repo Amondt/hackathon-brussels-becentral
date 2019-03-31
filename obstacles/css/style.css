@@ -23,6 +23,16 @@ p:hover{
     justify-content: center;
 }
 
+#eurobotAssistant {
+    display: block;
+    margin: 0 auto;
+}
+#eurobotAssistantDiv {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0px;
+}
 .nav {
     display: inline-block;
     text-decoration: underline;
