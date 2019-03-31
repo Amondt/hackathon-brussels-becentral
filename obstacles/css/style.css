@@ -89,6 +89,14 @@ textarea {
     background: #FFD617;
     color: #004494;
     font-weight: bold;
+    border: none;
+
+	font-size: 1.1em;
+	letter-spacing: 0px;
+	box-shadow: 1px 1px 5px #555;
+	cursor: pointer;
+	transform: scaleX(0.95);
+
 }
 
 #msgSend {
