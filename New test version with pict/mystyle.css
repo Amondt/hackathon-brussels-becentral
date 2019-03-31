@@ -5,40 +5,41 @@
 	bottom:20px;
 	color: #004494;
 	font-weight: bold;
-	font-size: 20px;
- right: 10px;
- width: 200px;
- height: 80px;
- background-color: #FFD617;
+	font-size: 1.1em;
+	right: 20px;
+	width: 190px;
+	height: 49px;
+	letter-spacing: 0px;
+	background-color: #FFD617;
+	border: none;
+	box-shadow: 1px 1px 5px #555;
+	cursor: pointer;
+	transform: scaleX(0.95);
 }
 
 #magicButton:hover{
-	text-decoration: underline;
+	background-color: rgba(255, 214, 23, 0.75);
 
 }
 
 #iframeContainer {
 	position: absolute;
 	z-index: 2;
- padding-left: 600px;
- padding-top: 250px;
- padding-bottom: 650px;
+	padding: 1px 0;
 	left: -2000px;
 	transition: 0.8s;
-	width: 1236px;
-background-color:rgba(0,0,0,0.7);
-border: 1px solid #004494;
-overflow: hidden;
-
+	width: 100%;
+	height: 100%;
+	background-color:rgba(0,0,0,0.7);
 }
 
 #obstacleForm {
-width: 700px;
+width: 40%;
+height: 100%;
 position: relative;
-border: 4px solid  #004494;
-border-radius: 5px;
+box-shadow: 1px 1px 30px #000;
+border-radius: 0 3px 3px 0;
 overflow: hidden;
-
 }
 
 /*OFF WE GO*/

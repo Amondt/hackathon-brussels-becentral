@@ -32,9 +32,9 @@
 
         <!-- One "tab" for each step in the form: -->
         <div class="tab" id="mainCategory">
-            <p>Hello, are you a: </p>
-            <p><input type="radio" name="mainCategory" value="citizen" oninput="this.className = ''">Citizen</p>
-            <p><input type="radio" name="mainCategory" value="business" oninput="this.className = ''">Business</p>
+            <p class="question">Hello, are you a:</p>
+            <p class="answer"><label>Citizen</label><input type="radio" name="mainCategory" value="citizen" oninput="this.className = ''"></p>
+            <p class="answer"><label>Business</label><input type="radio" name="mainCategory" value="business" oninput="this.className = ''"></p>
 
         </div>
 
@@ -176,6 +176,8 @@
             <textarea name ="message" placeholder="Which kind of problem did you encounter?"></textarea>
             <button id="submit" type="submit">Send</button>
         </div>
+
+        <div id="msgSend"><p>Thank you, your message has been send</p></div>
 
     </form>
 
