@@ -28,7 +28,7 @@
 <body>
     <form id="regForm" action="">
 
-        <p><span class="nav" id="mainSection"></span><span class="nav" id="subSection"></span><span class="nav" id="subSection2"></span></p>
+        <p><span class="nav" id="mainSection" tar=''></span><span class="nav" id="subSection"></span><span class="nav" id="subSection2"></span></p>
         
         <!-- One "tab" for each step in the form: -->
         <div class="tab" id="mainCategory">
@@ -172,7 +172,10 @@
             <p><input type="radio" name="dealingCustomers" value="dataProtection" oninput="this.className = ''">Data protection</p>
         </div>
 
-        <div id="message"><textarea name ="message" placeholder="description"></textarea></div>
+        <div id="message">
+            <textarea name ="message" placeholder="description"></textarea>
+            <button id="submit" type="submit">Send</button>
+        </div>
             
     </form>
 

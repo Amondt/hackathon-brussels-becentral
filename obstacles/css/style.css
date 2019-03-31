@@ -37,10 +37,15 @@ textarea {
     font-family: Raleway;
     border: 1px solid #aaaaaa;
     resize: vertical;
-    max-height: 230px;
+    height: 200px;
+    max-height: 500px;
 }
-
-/* Hide all steps by default: */
+#submit {
+    width: 100%;
+    height: 50px;
+    background: #3b883b;
+    color: #222;
+}
 #mainCategory {
     display: inline;
 }
