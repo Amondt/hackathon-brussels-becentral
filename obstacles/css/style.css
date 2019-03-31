@@ -1,16 +1,37 @@
 /* Style the form */
+
+input[type="radio"] {
+  margin-right: 15px;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+[type="radio"]:checked {
+  color: #666;
+
+}
+
+
+
 #regForm {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
     background-color: #ffffff;
     margin: 100px auto;
     padding: 40px;
-    width: 70%;
+    width: 80%;
     min-width: 300px;
+    justify-content: center;
 }
 
 .nav {
     display: inline-block;
+    text-decoration: underline;
     color: #4c4cc5;
     cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
 }
 /* Style the input fields */
 input {
@@ -43,8 +64,9 @@ textarea {
 #submit {
     width: 100%;
     height: 50px;
-    background: #3b883b;
-    color: #222;
+    background: #FFD617;
+    color: #004494;
+    font-weight: bold;
 }
 #mainCategory {
     display: inline;
