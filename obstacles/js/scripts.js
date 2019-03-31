@@ -40,7 +40,7 @@ window.onload = () => {
                 document.querySelector(`#${e.target.value}`).style.display = 'inline'
 
                 var nav = document.querySelector('#'+navs[currentNav])
-                nav.innerHTML = e.target.parentNode.innerText + ' >&nbsp;'
+                nav.innerHTML = e.target.parentNode.innerText + '&nbsp; >&nbsp;&nbsp;'
                 nav.tar = currentTab
                 nav.addEventListener('click', navigate)
                 currentNav += 1
