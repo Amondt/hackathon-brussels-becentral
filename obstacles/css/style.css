@@ -1,22 +1,20 @@
 /* Style the form */
 
 input[type="radio"] {
-  margin-right: 15px;
+    margin-right: 15px;
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
 }
 
 [type="radio"]:checked {
-  color: #666;
+    color: #666;
 
 }
 
-
-
 #regForm {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
     background-color: #ffffff;
     margin: 100px auto;
     padding: 40px;
@@ -33,6 +31,7 @@ input[type="radio"] {
     font-size: 25px;
     font-weight: bold;
 }
+
 /* Style the input fields */
 input {
     padding: 10px;
@@ -51,6 +50,7 @@ input.invalid {
     width: 100%;
     display: none;
 }
+
 textarea {
     padding: 10px;
     width: 100%;
@@ -61,6 +61,7 @@ textarea {
     height: 200px;
     max-height: 500px;
 }
+
 #submit {
     width: 100%;
     height: 50px;
@@ -68,9 +69,11 @@ textarea {
     color: #004494;
     font-weight: bold;
 }
+
 #mainCategory {
     display: inline;
 }
+
 .tab {
     display: none;
     margin: 80px;
