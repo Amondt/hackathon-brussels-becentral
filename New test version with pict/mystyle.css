@@ -5,15 +5,20 @@
 	bottom:20px;
 	color: #004494;
 	font-weight: bold;
-	font-size: 20px;
-	right: 10px;
-	width: 200px;
-	height: 80px;
+	font-size: 1.1em;
+	right: 20px;
+	width: 190px;
+	height: 49px;
+	letter-spacing: 0px;
 	background-color: #FFD617;
+	border: none;
+	box-shadow: 1px 1px 5px #555;
+	cursor: pointer;
+	transform: scaleX(0.95);
 }
 
 #magicButton:hover{
-	text-decoration: underline;
+	background-color: rgba(255, 214, 23, 0.75);
 
 }
 
